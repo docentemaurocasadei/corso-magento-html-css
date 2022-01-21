@@ -4,9 +4,148 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="The Rock" />
+    <meta property="og:type" content="video.movie" />
+    <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
+    <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
     <title>Document</title>
 </head>
 <body>
-    
+    <main>
+        <nav>
+            <ul>
+                <li><a href="#azienda">Azienda</a></li>
+                <li><a href="#servizi">Servizi</a></li>
+                <li><a href="#prodotti">Prodotti</a></li>
+                <li><a href="#contatti">Contatti</a></li>
+            </ul>
+        </nav>
+        <header>
+            <!-- testata del sito -->
+            <hgroup>
+                <h1>Prodotti per Ristoranti e Industrie</h1>
+                <h2>Qualità e Servizio nel settore Horeca Riminese</h2>
+            </hgroup>
+            <span>non sono un titolo</span>
+        </header>
+        <section id="storia">
+            <!-- storia dell'azienda -->
+            <abbr title="World Health Organization">WHO</abbr>
+            <bdo dir="rtl">This text will go right-to-left.</bdo>
+            <meter value="6" min="0" max="10">2 out of 10</meter>
+            <progress value="22" max="100"></progress>
+
+        </section>
+        <section id="prodotti">
+            <aside>
+                <ul>
+                    <li><a href="#ristorazione">prodotti per ristoranti</a></li>
+                    <li><a href="#industria">prodotti per industria</a></li>
+                    <li><a href="#servizi">prodotti per servizi</a></li>
+                </ul>
+            </aside>
+            <section id="prodotti">
+                <div id="prodotto1">
+                    <!-- prodotto 1 -->
+                </div>
+                <div id="prodotto2">
+                    <!-- prodotto 2 -->
+                </div>
+                <div id="prodotto3">
+                    <!-- prodotto 3 -->
+                </div>
+            </section>
+            <section id="contatti">
+                <form action="#" method="GET" enctype="multipart/form-data" name="registrationForm">
+                    <label for="nominativo">Nominativo:</label>
+                    <input type="text" name="nominativo" id="nominativo" autocomplete="off">
+                    <label for="indirizzo">Indirizzo:</label>
+                    <input type="text" name="indirizzo" id="indirizzo">
+
+                    <label for="password">Password</label>
+                    <input type="password" value="" name="password" id="password" disabled>
+
+                    <h2>la tua leta preferita</h2>
+                    <input type="checkbox" name="venezia" id="venezia">
+                    <label for="venezia">Venezia</label>
+                    <input type="checkbox" name="firenze" id="firenze">
+                    <label for="firenze">Firenze</label>
+                    <input type="checkbox" name="roma" id="roma">
+                    <label for="roma">Roma</label>
+                    <div>
+                        <select name="colore-preferito" id="colore-preferito">
+                            <option value="1">rosso</option>
+                            <option value="2">verde</option>
+                            <option value="3">giallo</option>
+                            <option value="4" selected>blu</option>
+                        </select>
+                    </div>
+                    <input type="email" name="mail" id="mail" autofocus placeholder="inserisci la tua email">
+                    <div>
+                        <label for="foto">Foto</label>
+                        <input type="file" name="foto" id="foto">
+                        <input type="number" name="rating" id="rating" min="1" max="5" >
+                    </div>
+                    <div>
+                        <label for=""></label>
+                        <input type="date" name="data"/>
+                        <br>
+                        <input type="range" value="24" min="1" max="100" oninput="this.nextElementSibling.value = this.value">
+                        <output>24</output>
+                    </div>
+                    <div>
+                        <input type="radio" name="privacy-dati" id="privacy-dati-si" required>Autorizzo
+                        <input type="radio" name="privacy-dati" id="privacy-dati-no">Non autorizzo
+                        <label for="privacy-dati">Autorizzo il trattamento dei dati personali ai sensi del D. Lgs. 196/2003 e all’art. 13 del Regolamento UE 2016/679 per la protezione delle persone fisiche e giuridiche riguardo al trattamento dei dati personali</label>
+                    </div>
+                    <input type="submit" value="Richiedi il Contatto">
+                    <button type="submit">Richiedi il Contatto</button>
+                </form>
+            </section>
+        </section>
+        <details> <summary>parte visible / titolo</summary> <p>sezione di dettaglio (nascosta)</p></details> 
+
+        <section id="news">
+            <article data-id_article="art123">
+                <header>
+                    <h3>Come fare un panettone classico</h3>
+                </header>
+                <img src="./gallery2.jpg" alt="" style="width:150px">
+                <figure>
+                    <img src="./gallery2.jpg" alt="" style="width:150px">
+                      <figcaption>
+                        Foto di benvenuto
+                        <small>© Diritti riservati</small>
+                      </figcaption>
+                </figure>                    
+                <p>
+                    la ricetta del panettone classico proposta da...
+                </p>
+                <footer>
+                    <small id="author">Mauro</small>
+                </footer>
+            </article>
+            <article>
+                <header>
+                    <h3>Come fare un pandoro</h3>
+                </header>
+                <p>
+                    la ricetta del pandoro di verona proposta da...
+                </p>
+                <footer>
+                    <small id="author">Chiara</small>
+                </footer>
+            </article>
+        </section>
+        <footer>
+            Copyright ... | p.iva: 0505055
+
+        </footer>
+    </main>
+    <script>
+        //  document.registrationForm.ageInputId.oninput = function(){
+        //      document.registrationForm.ageOutputId.value = document.registrationForm.ageInputId.value;
+        // }
+    </script>
 </body>
 </html>
