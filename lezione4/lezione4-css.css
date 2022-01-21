@@ -1,0 +1,97 @@
+/* 
+creare un file html e assegnare un color: 
+h1 interno
+h2 inline
+p esterno 
+*/
+h3 {
+    color: red;
+}
+/* mobile first */
+/*
+<= 575px
+576px - 767px
+768px - 991px
+992px - 1199px
+1200px - 1399px
+>= 1400px 
+*/
+/*
+< 575px
+576px - 991px
+> 992px
+*/
+
+h1 {
+    color: lightgreen;
+}
+p {
+    color: blue;
+}
+h3 {
+    color: green;
+}
+
+@media screen and (min-width: 576px) {
+    h1 {
+        color: rgb(103, 190, 103);
+    }     
+}
+@media screen and (min-width: 768px) {
+    h1 {
+        color: rgb(70, 143, 70);
+    }
+}
+@media screen and (min-width: 992px) {
+    h1 {
+        color: rgb(41, 105, 41);
+    }
+    h2 {
+        color: rgb(41, 105, 41);
+    }
+}
+@media screen and (min-width: 1200px) {
+    h1 {
+        color: rgb(28, 83, 28);
+    }
+}
+@media screen and (min-width: 1400px) {
+    h1 {
+        color: rgb(8, 42, 8);
+    }
+}
+
+
+/* desktop first
+
+h1 {
+    color: rgb(8, 42, 8);
+}
+@media screen and (max-width: 1400px) {
+    h1 {
+        color: rgb(28, 83, 28);
+    }
+}
+@media screen and (max-width: 1200px) {
+    h1 {
+        color: rgb(41, 105, 41);
+    }
+    h2 {
+        color: rgb(41, 105, 41);
+    }
+}
+@media screen and (max-width: 992px) {
+    h1 {
+        color: rgb(70, 143, 70);
+    }
+}
+@media screen and (max-width: 768px) {
+    h1 {
+        color: rgb(103, 190, 103);
+    }
+}
+@media screen and (max-width: 576px) {
+    h1 {
+        color: lightgreen;
+    }
+} */
