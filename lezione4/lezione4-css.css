@@ -1,8 +1,8 @@
-/* 
-creare un file html e assegnare un color: 
+/*
+creare un file html e assegnare un color:
 h1 interno
 h2 inline
-p esterno 
+p esterno
 */
 h3 {
     color: red;
@@ -14,14 +14,16 @@ h3 {
 768px - 991px
 992px - 1199px
 1200px - 1399px
->= 1400px 
+>= 1400px
 */
 /*
 < 575px
 576px - 991px
 > 992px
 */
-
+* {
+    color: tomato;
+}
 h1 {
     color: lightgreen;
 }
@@ -31,11 +33,43 @@ p {
 h3 {
     color: green;
 }
+section {
+    color:lightseagreen;
+}
+b {
+    color: magenta;
+}
+/*. = indica la classe*/
+h4 {
+    color: magenta !important;
+}
+b.azzurro, i.azzurro, code.azzurro, div#mio-id2, #mio-id{
+    color: mediumturquoise;
+}
+
+/* # = indica id */
+h4#sottotitolo-news{
+    color: orange;
+}
+h5 {
+    color: violet;
+}
+/* 
+    creare un file html con 3 titoli
+    h1, h2, h3
+    assegnare ad h1 una class=giallo
+    assegnare ad h1 un id=principale
+    creare una regola .giallo che imposta colore giallo
+    creare una regola #principale che imposta colore verde
+    creare una regola .sfondo-arancio (background-color: orange)
+    applicare la classe orange a tutti gli h2 e h1
+
+*/
 
 @media screen and (min-width: 576px) {
     h1 {
         color: rgb(103, 190, 103);
-    }     
+    }
 }
 @media screen and (min-width: 768px) {
     h1 {
