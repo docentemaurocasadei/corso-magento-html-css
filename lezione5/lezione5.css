@@ -1,0 +1,102 @@
+#header {
+    background-color: cornflowerblue;
+}
+nav#menu-top li{
+    display: inline;
+}
+/*pseudo classi */
+nav#menu-top li a:link{
+    color: yellow;
+}
+nav#menu-top li a:hover{
+    color: rgb(146, 146, 68);
+    background-color: tomato;
+}
+nav#menu-top li a:active{
+    color: rgb(77, 77, 46);
+}
+nav#menu-top li a:visited{
+    color: rgb(42, 42, 28);
+}
+/*pseudo classi */
+#news {
+    margin: 10px;
+}
+.bg-grigio{
+   background-color: darkgrey; 
+}
+article{
+    padding: 10px;
+}
+h1{
+    color: darkorange;
+}
+#titolo-principale {
+    color: darkorchid;
+}
+.text-verde{
+    color: darkgreen;
+}
+/* spazio selettore di discendenza */
+#news h3{
+    color: magenta;
+}
+/* > selettore di figlio diretto */
+#news > p{
+    font-size: 1.5em;
+}
+/* ~ [ALT+126] (tilde) selettore di fratelli successori*/
+input ~ label {
+    color: mediumorchid;
+}
+#scacchiera > div {
+    width: 15%;
+    height: 150px;
+    display: inline-block;
+}
+/*pseudo classi*/
+section#scacchiera div:hover{
+    background-color: turquoise;
+}
+/*fine pseudo classi*/
+/* + selettore di fratelli adiacenti e successori */
+div + div {
+    background-color: mediumpurple;
+}
+/*selettori di attributo*/
+input[type="text"], input[type="email"]{
+    border: 2px solid salmon;
+}
+input[name="nome"]{
+    background-color: sandybrown;
+}
+body section:first-child{
+    padding: 10px;
+}
+
+
+
+
+
+/*media query per ultime!!*/
+@media screen and (min-width: 576px) {
+    
+}
+@media screen and (min-width: 768px) {
+    #titolo-principale {
+        color: magenta;
+    }
+    #news article {
+        display: inline-block;
+        width: 30%;
+    }
+}
+@media screen and (min-width: 992px) {
+    
+}
+@media screen and (min-width: 1200px) {
+    
+}
+@media screen and (min-width: 1400px) {
+    
+}
