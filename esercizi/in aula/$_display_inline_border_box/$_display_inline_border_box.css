@@ -1,0 +1,41 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+}
+#news {
+    font-size: 0px;
+    width: 90%;
+    margin: 10px auto;
+}
+#news article{
+    width: 99%;
+    border: 2px solid lime;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 1%;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+@media screen and (min-width: 576px) {
+    #news article{
+        width: 49%;
+    }
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 992px) {
+    #news article{
+        width: 32%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    #news article{
+        width: 24%;
+    }       
+}
+@media screen and (min-width: 1400px) {
+}

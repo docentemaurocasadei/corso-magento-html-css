@@ -60,7 +60,7 @@ section#scacchiera div:hover{
 }
 /*fine pseudo classi*/
 /* + selettore di fratelli adiacenti e successori */
-div + div {
+#scacchiera div + div {
     background-color: mediumpurple;
 }
 /*selettori di attributo*/
@@ -78,11 +78,106 @@ p:lang(en) {
     font-style: italic;
     margin-top: 16px;
 }
+/*pseudo classi strutturali */
+#scacchiera1 div div{
+  width: 6%;  
+  height: 60px;
+  display: inline-block;
+}
+/* #scacchiera1 div:nth-child(1) div:nth-child(odd),
+#scacchiera1 div:nth-child(3) div:nth-child(odd),
+#scacchiera1 div:nth-child(5) div:nth-child(odd),
+#scacchiera1 div:nth-child(7) div:nth-child(odd) {
+    background-color: black;  
+}
+#scacchiera1 div:nth-child(2) div:nth-child(even),
+#scacchiera1 div:nth-child(4) div:nth-child(even),
+#scacchiera1 div:nth-child(6) div:nth-child(even),
+#scacchiera1 div:nth-child(8) div:nth-child(even) {
+    background-color: black;  
+} */
+/*oppure*/
+#scacchiera1 div:nth-child(odd) div:nth-child(odd) {
+    background-color: black;  
+}
+#scacchiera1 div:nth-child(even) div:nth-child(even) {
+    background-color: black;  
+}
+/* #scacchiera1 div:nth-child(1){ */
+/* #scacchiera1 div:nth-child(odd){ */
+/* #scacchiera1 div:nth-child(2n+2) */
+/* #scacchiera1 div:nth-child(1),
+#scacchiera1 div:nth-child(1),
+#scacchiera1 div:nth-child(1), */
+/* {
+    background-color: black;
+} */
+#scacchiera1 div:nth-last-child(1) div:nth-last-child(1){
+    background-color: red;
+}
 
-
-
-
+#strisce-pedonali div{
+    width: 10%;  
+    display: inline-block;
+}
+#strisce-pedonali div::after{
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+}
+#strisce-pedonali div:last-child,
+#strisce-pedonali div:first-child  {
+    background-color: red;
+}
+#strisce-pedonali div:nth-child(even)  {
+    background-color: black;
+}
+#strisce-pedonali div:empty {
+    border: 3px solid orange;
+}
+#news article:not(.bg-grigio){
+    background-color: palegreen;
+}
+#contatti input:enabled {
+    background-color: palegreen;
+}
+#contatti input:disabled {
+    background-color: darkmagenta;
+}
+#contatti input:checked + label {
+    font-size: 2em;
+}
+/*pseudo elementi*/
+article p::first-letter{
+    font-size: 3em;
+}
+article p::first-line{
+    color: darkorange;
+}
+#menu-top li a::before{
+    content: '-->';
+}
+#menu-top li a::after{
+    content: '<--';
+}
+#box, #box1{
+    border: 10px solid black;
+    /* padding: 10%; */
+    margin: 20px 0.5%;
+    background-color: lime;
+    width: 48%;
+    display: inline-block;
+}
+#box, #box1{
+    box-sizing: border-box;
+}
 /*media query per ultime!!*/
+/*margin - width - height auto*/
+#dimensioni h2{
+    width: 250px;
+    margin: 15px auto;
+}
+
 @media screen and (min-width: 576px) {
     
 }
