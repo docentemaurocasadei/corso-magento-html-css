@@ -73,7 +73,11 @@ input[name="nome"]{
 body section:first-child{
     padding: 10px;
 }
-
+/* p[lang="en"] { */
+p:lang(en) {
+    font-style: italic;
+    margin-top: 16px;
+}
 
 
 

@@ -1,0 +1,47 @@
+<!-- 1 parte
+creare una pagina html con un menù di 6 elementi
+disporre i menù in verticale su smartphone e in orizzontale su notebook >=992px
+
+impostare un reset al css dello user agent
+
+impostare un effetto di background-color all'hover di ogni etichetta di menù
+
+2 parte
+inserire una section con un form e 3 checkbox e i input email (con le varie label)
+
+colorare e "ingrandire" a 1.5 il font delle label delle checkbox (selettore di fratelli) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./$_css_selettore_di_fratelli_pseudoclassi.css">
+    <title>$_css_selettore_di_fratelli_pseudoclassi</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Azienda</a></li>
+            <li><a href="#">Storia</a></li>
+            <li><a href="#">Prodotti</a></li>
+            <li><a href="#">Servizi</a></li>
+            <li><a href="#">Contatti</a></li>
+        </ul>
+    </nav>
+    <section>
+        <form action="#" name="iscrizione">
+            <input type="checkbox" name="viaggi" id="viaggi">
+            <label for="viaggi">Viaggi</label>
+            <input type="checkbox" name="cinema" id="cinema">
+            <label for="cinema">Cinema</label>
+            <input type="checkbox" name="sport" id="sport">
+            <label for="sport">Sport</label>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" data-input="d-anagrafici">
+        </form>
+    </section>
+</body>
+</html>
