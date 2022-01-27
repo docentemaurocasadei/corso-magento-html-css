@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="prima pagina html">
+    <meta name="robots" content="follow,index">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Lezione 1</title>
+    <style>
+        /* * {border: 1px solid black;} */
+        span:lang(it){
+            color: green;
+        }
+        span:lang(en){
+            color: blue;
+        }
+        span[data-author]{
+            font-size: 5em;
+        }
+    </style>
+</head>
+<body>
+
+
+    <!-- il tag h1 è un titolo CTRL+K+C CTRL+K+U    -->
+    <h1 style="color:rgb(245, 132, 66)">Html</h1>
+    <h2>I meta tag</h2>
+    <p>I meta tag sono dei tag . I meta tag sono dei tag . I meta tag sono dei tag . I meta tag sono dei tag . I meta tag sono dei tag . I meta tag sono dei tag . I meta tag sono dei tag . I meta tag sono dei tag . I meta tag sono dei tag ..</p>
+    <h2>La favicon</h2>
+    <span data-author="Silvia">Silvia</span>
+    <span title="titolo del mio span" id="autore" class="rosso" lang="it" style="" draggable=true>questa sarà la riga a fianco all'immagine</span>
+    <span title="titolo del mio span" id="autore" class="verde" lang="en" style="">this is the line ....</span>
+    <p>I meta tag sono dei tag . I meta tag sono dei tag . I meta tag sono dei tag . I meta tag sono dei tag . I meta tag sono dei tag . I meta tag sono dei tag . I meta tag sono dei tag . I meta tag sono dei tag . I meta tag sono dei tag ..</p>
+    <span data-author="Mauro">Mauro</span>
+    <span>Ciao</span>
+    <span lang="it">a</span>
+    <span>tutti</span>
+    <!-- 
+    img = elemento o tag
+    src = attributo sorgente (il percorso all'immagine)
+    alt = attributo alternative text (testo alternativo se immagine non caricata) 
+    title = titolo descrittivo dell'immagine
+    onclick = eseguire il javascript al click
+    onblur = eseguire il javascript quando si perde il fuoco
+-->
+    
+    <img src="./favico__n.png" alt="immagine con un più" title ="img con più">
+    
+    <p>
+        <img src="./favicon.png" alt="" title ="img con più" onclick="alert('ciao')">
+    </p>
+    <span title="titolo del mio span" id="autore" class="rosso" lang="it" style="" draggable=true>questa sarà la riga a fianco all'immagine</span>
+    <span title="titolo del mio span" id="autore" class="verde" lang="en" style="">this is the line ....</span>
+    <input type="text" disabled>
+        <!-- 
+        1. aprire una nuova pagina .html nominata esercizio1.html 
+        2. inserire uno snippet come da standard (da DOCTYPE a /html !)
+        3. inserire un titolo h1 nel body
+        4. inserire 3 h2 e ogni h2 un paragrafo e uno span che ne identifica l'autore
+    -->
+    
+    <h1>Esercizio 1</h1>
+    <h2>Titolo 1</h2>
+    <img src="https://unsplash.it/100/100?random" alt="">
+    <p>lished fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as oppos</p>
+    <span>Autore MMM</span>
+    <h2>Titolo 2</h2>
+    <img src="https://unsplash.it/100/100?random" alt="">
+    <p>lished fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as oppos</p>
+    <span>Autore AAA</span>
+    <h2>Titolo 3</h2>
+    <img src="https://unsplash.it/100/100?random" alt="">
+    <p>lished fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as oppos</p>
+    <span>Autore CCC</span>
+
+    <!-- aggiungere una immagine ogni articolo (a paicere) tra h2 e p -->
+</body>
+</html>
