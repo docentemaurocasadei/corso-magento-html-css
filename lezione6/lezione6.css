@@ -1,0 +1,110 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+header img{
+    max-width: 100px;
+    /* per centrare immagine: */
+    display: block;
+    margin: 0 auto;
+}
+
+ul#top-menu {
+    background-color: black;
+}
+#top-menu a {
+    color: white;
+}
+#top-menu{
+    /* allinea in testo al centro */
+    text-align: center;
+    padding: 10px;
+}
+#top-menu li {
+    margin: 5px 0px;
+}
+
+
+/* 
+selettore figli diretti > 
+selettore di fratelli ~
+selettore di fratelli adiacenti +
+selettore posizione 1 figlio #top-menu ul li:nth-child(1) 
+selettore posizione figli pari #top-menu ul li:nth-child(even) 
+selettore posizione ultimo figlio #top-menu ul li:last-child 
+
+*/
+#news {
+    font-size: 0;
+}
+#news *{
+    font-size: 1rem;
+}
+
+#box-model, #box-model1 {
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: 1%;
+    padding: 1%;
+    display: inline-block;
+}
+#primo-piano1 {
+    /* border-top: 2px solid red; */
+    border-top-color: red;
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-right: 3px dotted blue;
+    border-bottom: 4px dashed green;
+    border-left: 5px double yellow;
+    width: 50%;
+    margin: 0 auto;
+    min-height: 100px;
+    /* overflow: scroll; */
+    padding: 5px;
+    border-top-left-radius: 10px 50px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 40px;
+}
+#gallery img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+/* #primo-piano1 {
+    outline: 4px solid salmon;
+} */
+input {
+    outline: none;
+}
+button[type="submit"]{
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: white;
+}
+#motto {
+    background-image: url('./sfondo.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 200px;
+}
+#motto h2{
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    #top-menu li{
+        /* disporre degli elementi di blocco come elementi inline */
+        display: inline-block;
+        margin: 0 10px;
+    }
+    #box-model, #box-model1 {
+        width: 48%;
+    }
+    
+}
