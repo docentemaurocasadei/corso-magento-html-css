@@ -7,24 +7,42 @@
     <title>Document</title>
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./lezione7.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <section id="riferimenti">
+        <div class="container">
+            <div id="phone">
+                <a href="tel:+3351234567"><i class="fas fa-phone-alt"></i><span>+335.12345678</span></a>
+            </div>
+            <div id="email">
+                <a href="mailto:info@miosito.it"><i class="far fa-envelope"></i><span>info@miosito.it</span></a>
+            </div>
+            <div id="wa">
+                <a href="https://wa.me/+393351234567"><i class="fab fa-whatsapp"></i><span>whatsapp 335.1234567</span></a>
+            </div>
+        </div>
+    </section>
     <header>
         <img src="./logo.jpeg" alt="">
     </header>
-    <nav>
+    <nav id="nav-menu">
         <ul id="top-menu">
             <li><a href="#">Home</a></li>
             <li><a href="#">Chi Siamo</a></li>
             <li><a href="#">Contatti</a></li>
         </ul>
     </nav>
-    <section id="news">
+    <section id="news" class="container">
         <div id="box-model">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to 
+            <h3>lista linguaggi:</h3>
+            <ul>
+                <li>Html</li>
+                <li>Css</li>
+                <li>Bootstrap</li>
+            </ul>
         </div>
         <div id="box-model1">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to 
@@ -42,8 +60,88 @@
         <img src="./auto.jpg" alt="">
     </section> -->
     <section id="motto">
-        <h2>Crederci per Vincere!!!</h2>
+        <h2 class="titolo-home">CREDERCI PER VINCERE!!!</h2>
+        <div class="bg-alpha"></div>
     </section>
+    <section id="gallery" class="container">
+        <h2 class="container titolo-home" >Gallery</h2>
+        <div>   
+            <img src="./portrait.jpg" alt="">
+        </div>
+        <div>   
+            <img src="./ferrari.jpg" alt="">
+        </div>
+        <div>   
+            <img src="./ferrari.jpg" alt="">
+        </div>
+    </section>
+    <!-- <section id="position-0">
+        <section id="position-1">
+            <section id="position" class="container">
+                <div id="primo" >primo
+                    <div>primo 1.1</div>
+                    <div>primo 1.2</div>
+                    <div>primo 1.3</div>
+                    <div>primo 1.4</div>
+                    <div>primo 1.5</div>
+                    <div>primo 1.6</div>
+                    <div>primo 1.7</div>
+                </div>
+                <div id="secondo">secondo</div>
+                <div id="terzo" >terzo</div>
+                <div id="quarto" >quarto</div>
+            </section>
+        </section>
+    </section>
+    <section id="tabella dati">
+        <!-- <table cellpadding="5" cellspacing="3"> 
+        <table>
+            <caption>Tabella Dati</caption>
+            <thead>
+                <th>Dato 1</th>
+                <th>Dato 2</th>
+                <th>Dato 3</th>
+                <th>Dato 4</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>DatoDatoDatoDatoDatoDato 1.1</td>
+                    <td>DatoDatoDatoDatoDatoDato 1.2</td>
+                    <td>DatoDatoDatoDatoDatoDato 1.3</td>
+                    <td>-DatoDatoDatoDatoDatoDato 1.4</td>
+                </tr>
+                <tr>
+                    <td>DatoDatoDatoDatoDatoDato 2.1</td>
+                    <td>DatoDatoDatoDatoDatoDato 2.2</td>
+                    <td>DatoDatoDatoDatoDatoDato 2.3</td>
+                    <td>-DatoDatoDatoDatoDatoDato 2.4</td>
+                </tr>
+                <tr>
+                    <td>DatoDatoDatoDatoDatoDato 3.1</td>
+                    <td>DatoDatoDatoDatoDatoDato 3.2</td>
+                    <td>DatoDatoDatoDatoDatoDato 3.3</td>
+                    <td>-DatoDatoDatoDatoDatoDato 3.4</td>
+                </tr>
+                <tr>
+                    <td>DatoDatoDatoDatoDatoDato 4.1</td>
+                    <td>DatoDatoDatoDatoDatoDato 4.2</td>
+                    <td>DatoDatoDatoDatoDatoDato 4.3</td>
+                    <td>-DatoDatoDatoDatoDatoDato 4.4</td>
+                </tr>
+            </tbody>
+        </table>
+    </section> -->
+    <section id="dalle-aziende" class="container">
+        <h2 class="container titolo-home" >Dalle Aziende</h2>
+        <p>
+            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+        </p>
+    </section>
+    <div id="chatta-con-noi">
+        <a href="https://wa.me/+393351234567"><i class="fab fa-whatsapp fa-4x"></i></a>
+    </div>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
