@@ -22,6 +22,7 @@
 }
 #riferimenti a{
     color: white;
+    text-transform: capitalize;
 }
 #riferimenti span{
     display: none;
