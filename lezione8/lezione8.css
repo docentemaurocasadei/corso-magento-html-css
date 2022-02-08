@@ -147,6 +147,46 @@ section#primo-piano > section > div:nth-child(2) {
 section#primo-piano > section > div:nth-child(3) {
     order: 3;
 }
+section#mission {
+    min-height: 150px;
+    background-color: #2fc0c5;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#mission h3 {
+    color: white;
+    margin: 1em;
+}
+#fotogallery{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap:10px;
+
+}
+#fotogallery div{ 
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+
+}
+#fotogallery div:nth-child(odd){ 
+    background-image: url('./ferrari.jpg');
+}
+#fotogallery div:nth-child(even){ 
+    background-image: url('./auto.jpg');
+}
+#fotogallery div:nth-child(1){
+    grid-row: span 2;
+}
+#fotogallery div:nth-child(4){
+    grid-column: span 2;
+}
+#fotogallery div:nth-child(6){
+    grid-row: span 2;
+}
+
 @media screen and (min-width: 768px) {
     .container {
         width: 80%;
@@ -167,5 +207,28 @@ section#primo-piano > section > div:nth-child(3) {
     section#primo-piano > section > div {
         padding: 0 5px;
         width: 33%;
+    }
+    #fotogallery{
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+    #fotogallery div:nth-child(1){
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+    #fotogallery div:nth-child(3){
+        grid-row: span 2;
+    }
+    #fotogallery div:nth-child(4){
+        grid-row: span 2;
+        grid-column: span 1;
+    }
+    #fotogallery div:nth-child(5){
+        grid-column: span 2;
+    }
+    #fotogallery div:nth-child(6){
+        grid-row: span 1;
+    }
+    #fotogallery div:nth-child(7){
+        grid-column: span 2;
     }
 }
