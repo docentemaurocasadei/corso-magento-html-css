@@ -1,0 +1,134 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
+
+<body>
+    <main id=container class="border">
+        <header id="header">
+            <img src="immagini/logo.png" alt="logo" style="margin: 0 auto;">
+            <code>sfondo: #F2F2F2</code>
+            <nav>
+                <ul id="menu" class="">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#chi-siamo">Chi Siamo</a></li>
+                    <li><a href="#contatti">Contatti</a></li>
+                </ul>
+                <code>il menù è in linea e collegato con le # alle rispettive sezioni</code>
+                <code>Font Utilizzato: Google Font: 'Roboto'</code>
+            </nav>
+        </header>
+        <section id="primopiano">
+            <h1>CSS</h1>
+            <h2>Responsive Web Design</h2>
+            <button>Scopri di Più</button>
+            <button>Contatti</button>
+            <code>sono un h1,h2, 2 button in linea, centrati orizzontalmente, il contenitore ha un padding 50px top e bottom</code>
+        </section>
+        <section id="caratteristiche">
+            <article class="caratteristica">
+                <div class="caratteristiche-into">
+                    <header>
+                        <i class="fab fa-accusoft fa-5x"></i>
+                        <h3>Display</h3>
+                    </header>
+                    <p>As the name says, this theme is designed with minimalism in mind. It's ideal for Designers
+                        and Photographers. Minimaluu lets your work speak for itself.</p>
+                </div>
+            </article>
+            <article class="caratteristica">
+                <div class="caratteristiche-into">
+                    <header>
+                        <i class="fab fa-500px fa-5x"></i>
+                    </header>
+                    <h3>Display</h3>
+                    <p>As the name says, this theme is designed with minimalism in mind. It's ideal for Designers
+                        and Photographers. Minimaluu lets your work speak for itself.</p>
+                </div>
+            </article>
+            <article class="caratteristica">
+                <div class="caratteristiche-into">
+                    <header>
+                        <i class="fas fa-align-center fa-5x"></i>
+                    </header>
+                    <h3>Display</h3>
+                    <p>As the name says, this theme is designed with minimalism in mind. It's ideal for Designers
+                        and Photographers. Minimaluu lets your work speak for itself.</p>
+                </div>
+            </article>
+        </section>
+        <code>Icone Utilizzate: fa-icon: fab fa-accusoft fa-5x | fas fa-500px fa-5x | fas fa-align-center fa-5x</code>
+        <section id="chisiamo-sect">
+            <div id="chisiamo-sx">
+                <img src="immagini/strumenti-musicali.png" alt="strumenti musicali">
+            </div>
+            <div id="chisiamo-dx">
+                <h2 id="chi-siamo">Chi Siamo</h2>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum
+                <button>Scopri di Più</button>
+            </div>
+        </section>
+        <code>2 Colonne 50%, immagine width: 50%, button ha width 200px</code>
+        <section id="contatti-sect">
+            <div id="contatti-pellicola" class="pellicola"></div>
+            <form action="contatti.php" id="contatti-form">
+                    <section id="forminto0">
+                        <h2 id="contatti">CONTATTI</h2>
+                    </section>
+                <section id="forminto1">
+                    <label>Nominativo:</label><input type="text" name="nominativo" placeholder="Nominativo" required>
+                    <label>e-mail:</label><input type="email" name="nominativo" placeholder="Email" required>
+                    <button type="submit">Invia</button>
+                </section>
+            </form>
+        </section>
+        <code>Form con 2 label, 2 controlli e un submit + background con effetto parallasse e pellicola tra background e controlli, gli input sono height:30px</code>
+        <footer id="footer">
+            <section id="footerblock">
+                <div>
+                    <img src="immagini/logosmall.png" alt="">
+                    <h4>Societa s.r.l.</h4>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour, or randomised words </p>
+                </div>
+                <div>
+                </div>
+                <div>
+                </div>
+                <div>
+                    <h5>Menù</h5>
+                    <ul id="menufooter" class="">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#chi-siamo">Chi Siamo</a></li>
+                        <li><a href="#contatti">Contatti</a></li>
+                    </ul>
+                    <h5>Link</h5>
+                    <ul id="menufooter" class="">
+                        <li><a href="#sitema">Sitemap</a></li>
+                        <li><a href="#privacy">Privacy</a></li>
+                    </ul>
+                </div>
+            </section>
+            <code>4 colonne al 25%, logo e h4 e descrizione nella 1° colonna, 2 ul con link nella 4° colonna</code>
+            <address>
+                Società s.r.l. | via Garibaldi n. 1 | Rimini (RN) | P.IVA: 010101010101
+            </address>
+            <code>tag Address<br>In generale: le colonne container più piccole hanno un width=80%</code>
+        </footer>
+    </main>
+</body>
+
+</html>

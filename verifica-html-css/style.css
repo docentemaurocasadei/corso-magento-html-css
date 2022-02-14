@@ -1,0 +1,247 @@
+*{
+    box-sizing: border-box;
+}
+code{display:block;margin:2 auto;text-align:center; width:80%;}
+body{
+    font-family: 'Roboto', sans-serif;
+    margin:0px;
+}
+#container{
+    width:100%;
+}
+#header, nav{
+    background-color: #F2F2F2;
+    width: 100%;
+    text-align: center;
+    top:0px;
+    padding: 10 0;
+}
+#header img {
+    display:block;
+    margin:0px auto;
+}
+#header small{
+    margin: 0 auto;
+    width:100px;
+}
+/*nav*/
+ul#menu li{
+    display: inline;
+    list-style-type: none;
+}
+ul#menu li a{
+    color: black;
+    text-decoration: none;
+}
+ul#menu li:after{
+    content:" | ";
+}
+ul#menu{
+    margin: 0 auto;
+    padding: 0;
+}
+#primopiano{
+    background-color: black;
+    color: white;
+    margin: 0px;
+    text-align:center;
+    padding: 50;
+}
+#primopiano h1,#primopiano h2{
+    margin:0px;
+    font-weight: 100;
+}
+#primopiano button{
+    border-radius: 2px;
+    border:1px solid white;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 100px;
+    margin-top:10px;
+}
+/*caratteristiche*/
+section#caratteristiche, section#chisiamo-sect{
+    width: 80%;
+    margin: 20 auto;
+    padding: 0px;
+    font-size: 0px; /*serve per evitare il gap tra i div se metto 33%*/
+}
+.caratteristica{
+    width:33%;
+    display: inline-block;
+    margin:0px;
+    padding:5px;
+    border: 1px solid black;
+    font-size: 16px;
+}
+.caratteristiche-into{
+    text-align: center;
+    margin:0px;
+}
+/*chi siamo*/
+#chisiamo-sx,#chisiamo-dx{
+    font-size:16px;
+    width:50%;
+    color:black;
+    text-align: center;
+    display: inline-block;
+}
+#chisiamo-sx img{
+    max-width: 580px;
+    width: 50%;
+}
+#chisiamo-dx {
+    vertical-align: top;
+    text-align: justify;
+}
+
+#chisiamo-dx button, #contatti-sect button {
+    border-radius: 2px;
+    border:1px solid black;
+    color: black;
+    padding: 10px;
+    width: 200px;
+    margin:10 auto;
+    display: block;
+    background-color: #F2F2F2;
+}
+/*contatti*/
+section#contatti-sect{
+    width: 100%;
+    min-height: 250px;;
+    background-image: url("immagini/parallasse.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+}
+.pellicola{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index:2;
+}
+#contatti-form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    padding:30px 0px;
+    position: relative;
+    z-index: 3;
+    color: white;
+}
+#contatti-sect h2{
+    padding:10;    
+    border: 1px solid white;
+    border-radius: 5px;
+
+}
+#forminto0{
+    width:60%;
+    margin:40px;
+}
+#forminto1{
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    background-color: coral;
+    border-radius: 5px;
+}
+#contatti-form input{
+    border-radius: 2px;
+    border: 1px solid gray;
+    background-color: #F2F2F2;
+    height: 30px;
+    padding:2px;
+}
+#contatti-form label{
+    width: 100;
+    display: inline-block;
+}
+/*footer*/
+#footer{
+    background-color: black;
+    color: white;
+    margin: 0px;
+    text-align:center;
+    position: relative;
+}
+#footerblock{
+    width:80%;
+    margin: 0 auto;
+    padding:10px;
+    font-size:0px;
+}
+#footerblock div{
+    width: 25%;
+    text-align: left;
+    display:inline-block;
+    vertical-align: middle;
+}
+#footerblock div{
+    font-size: 12px;
+}
+#footerblock div h4,#footerblock div h5{
+    font-size: 18px;
+    margin: 0 0 2 0;
+}
+#footer address{
+    background-color: #F2F2F2;
+    color:black;
+    width: 100%;
+}
+#menufooter{
+    color:white;
+    padding:0px;
+}
+ul#menufooter li, ul#menufooter li a{
+    list-style-type: none;
+    color:white;
+}
+#contatti-sect button{
+    width: 100%;
+}
+#footerblock img{
+    max-width: 100%;
+}
+@media screen and (max-width:576px){
+    .caratteristica,#chisiamo-sx,#chisiamo-dx,#contatti-form div{ 
+        width:100%;
+        display: block; 
+        margin:5 0;   
+    }
+    #contatti-form{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+    }    
+    #contatti-sect h2{
+        text-align: center;
+    }  
+    #contatti-form button{
+        width: 100%;
+    } 
+    #footerblock div{
+        width: 80%;
+        text-align: left;
+        display:block;
+    }
+    #forminto0{
+        width:80%;
+    }
+    #forminto1{
+        width:80%;
+        display: flex;
+        flex-direction: column;
+        padding:20px;
+        background-color: coral;
+        border-radius: 5px;
+    }
+   
+}
